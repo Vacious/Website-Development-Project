@@ -1,7 +1,8 @@
 # Website-Development-Project
 
-<u>Steps to install code</u>
-1. Install the code in your \xampp\htdoc
+<b><u>Steps to install code:</u></b>
+  
+1. Install the code in your local directory of \xampp\htdoc
 2. Turn on Apache and MySQL in XAMPP
 3. In this project folder, find database\dbyale.sql 
 4. Import dbyale.sql in your localhost phpmyadmin
