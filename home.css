@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+}
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255,255,255,0.8)), url(images/istockphoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*--Nav Class--*/
+nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+nav img{
+    margin-left: 20px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 10px;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav button{
+    margin-right: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 17, 51, 0.8);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    color: #ffffff;
+}
+nav button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #001133;
+}
+
+/*--test-box Class--*/
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    padding: 10px;
+    word-spacing: 1.2px;
+    line-height: 1.6;
+}
+.hero-btn{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+.hero-btn a{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.hero-btn:hover{
+    border: 1px solid #001133;
+    background: rgba(204, 221, 255, 0.5);
+    transition: 1s;
+}
+@media(max-width: 1200px){
+    .nav-links ul a{
+        font-size: 12px;
+    }
+}
+
+/*--happening-this-week section--*/
+.happening-this-week{
+    margin: 30px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sidebar{ 
+    text-align: left;
+    position: relative;
+    flex: 1;
+    max-width: 230px;
+    max-height: 830px;
+    margin: 10px;
+}
+.sidebar header{
+    font-size: 18px;
+    line-height: 30px;
+    background: #d1d1e0;
+    user-select: none;
+    text-align: center;
+    color: #001133;
+}
+.sidebar ul li{
+    list-style-type: none;
+}
+.sidebar ul a{
+    color: #002266;
+    display: block;
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+.sidebar ul li:hover a{
+    padding-left:25px;
+}
+.htw-container{
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 1200px;
+    max-height: 830px;
+    margin: 10px;
+}
+.htw-title{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 1200px;
+    height:50px;
+    margin: 10px;
+}
+.htw-item{
+    text-align: center;
+    background: #ccddff;
+    position: relative;
+    flex: 1;
+    max-width: 1200px;
+    max-height: 170px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.htw-item:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+.right-bar{
+    text-align: left;
+    position: relative;
+    flex: 1;
+    max-width: 250px;
+    max-height:830px;
+    margin: 10px;
+}
+.right-bar header{
+    font-size: 18px;
+    line-height: 30px;
+    background: #d1d1e0;
+    user-select: none;
+    text-align: center;
+    color: #001133;
+}
+.right-bar ul li{
+    list-style-type: none;
+}
+.right-bar ul a{
+    color: #002266;
+    display: block;
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+.right-bar ul li:hover a{
+    padding-left:25px;
+}
+.right-bar ul p{
+    padding-left: 24px;
+    font-size: 12px;
+    color: #003cb3;
+}
+.right-bar ul h4{
+    padding-left: 15px;
+    font-size: 14px;
+    color: #002266;
+    padding: 10px;
+}
+.right-bar ul h4 a{
+    padding-left: 15px;
+    font-size: 14px;
+    color: #001133;
+}
+.happening-this-week h1 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    color: #001133;
+}
+h3{
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 22px;
+    padding: 5px;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 5px;
+}
+/*--End happening-this-week section--*/
+
+/*--Fall 2021 At The School of Art & School News Section--*/
+.S2{
+    margin: 30px;
+    background: #001133;
+    border-radius: 5px;
+}
+.F2021-Container{
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height:870px;
+    margin: 10px;
+}
+.F2021-Title{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height:50px;
+    margin: 10px;
+    color: #ffffff;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(204, 221, 225, 0.7);
+}
+.F2021-Item-1{
+    text-align: center;
+    background-image: url(images/PhotoPoster_ƒƒ.jpg);
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.F2021-Item-2{
+    text-align: center;
+    background-image: url(images/Welcome\ to\ Fall\ 2021_Wiki_Hannah\ Tjaden.gif);
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.Description{
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height: 90px;
+    margin: 10px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+.Description p{
+    line-height: 8px;
+}
+.Description a{
+    color: #fff !important;
+}
+.SN-Container{
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height:870px;
+    margin: 10px;
+}
+.SN-Title{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height:50px;
+    margin: 10px;
+    color: #ffffff;
+}
+.SN-Item-1{
+    text-align: center;
+    background-image: url(images/Claudia\ Duncan\ -\ Riley\ Duncan_News\ from\ New\ Haven_10_19.jpg);
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.SN-Item-2{
+    text-align: center;
+    background-image: url(images/Untitled\ Back.png);
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+/*--End Fall 2021 At The School of Art & School News Section--*/
+
+/*--Community Bulletin Board Section--*/
+.S3{
+    margin: 30px;
+}
+.S3 p{
+    text-align: justify;
+}
+.CBB-Title{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 1800px;
+    height:50px;
+    margin: 10px;
+    color: #001133;
+}
+.CBB-Item-1{
+    text-align: center;
+    background: #ccddff;
+    position: relative;
+    flex: 1;
+    max-width: 1900px;
+    max-height: 310px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.CBB-Item-1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+.CBB-Item-2 {
+    text-align: center;
+    background: #ccddff;
+    position: relative;
+    flex: 1;
+    max-width: 1800px;
+    max-height: 130px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.CBB-Item-2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
+}
+.CBB-Item-3{
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 1800px;
+    height: 90px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.CBB-Item-3 p{
+    line-height: 20px;
+    padding: 1px;
+}
+.CBBI-Button a:link, a:visited{
+    background-color: #e6eeff;
+    color: #001133;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 50px;
+}
+.CBBI-Button a:hover, a:active{
+    background-color: #ccddff;
+}
+/*--End Community Bulletin Board Section--*/
+
+/*--Calenders & Newsletters Section--*/
+.S4{
+    margin: 30px;
+    background: #001133;
+    border-radius: 5px;
+}
+.CN-Title{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 1800px;
+    height:50px;
+    margin: 10px;
+    padding-top: 10px;;
+    color: #ffffff;
+}
+.CN-Item{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    max-width: 900px;
+    max-height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.CN-Item:hover{
+    box-shadow: 0 0 20px 0px rgba(255,255,255,0.2)
+}
+.CN-Item a{
+    color: #ffffff;
+    font-size: 16px;
+}
+.CN-Item p{
+    text-align: justify;
+    line-height: 25px;
+}
+/*--End Calenders & Newsletters Section--*/
+
+/*--Footer Section--*/
+.Footer{
+    padding: 40px;
+    background: #ffffff;
+}
+.F-Social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #001133;
+}
+
+.F-Social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 20px;
+    opacity: 0.75;
+}
+.F-Social a:hover{
+    opacity: 0.9;
+}
+.Footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0; 
+    text-align: center;
+}
+.Footer ul a{
+    color: #001133;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.Footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.Footer ul a:hover{
+    opacity: 1;
+}
+.F-Text{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+.F-Copyright{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #003cb3;
+}
+/*--End Footer Section--*/
