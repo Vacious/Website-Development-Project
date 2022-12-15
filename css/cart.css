@@ -1,0 +1,199 @@
+body{
+    background-color: rgb(237, 242, 245);
+}
+.cart-container{
+    margin: 10px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    
+}
+/*Cart details*/
+.course-cart{
+    margin:5px;
+    padding:10px;
+    width:60%;
+    box-shadow: 0 0 10px rgb(238, 231, 230);
+
+}
+.course-cart h5, .title h5{
+    margin:10px;
+    padding-left: 10px;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.course-body{
+    margin:5px;
+    width: 100%;
+    display: flex;
+    margin-top:20px;
+    border-style: ridge;
+}
+
+.item{
+    float:left;
+    width: 33%;
+    height: 100%;
+
+}
+.item img{
+    max-width: 100%;
+    margin:5px;
+    margin-top: 30px;
+    justify-content:  center;
+    background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
+}
+
+.item h4{
+    padding: 5px 30px;
+}
+
+.item button{
+    margin: 40px 50px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: small;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: rgb(195, 83, 83);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow,transform;
+}
+
+.item button:hover, .item button:focus, .item button:active{
+    box-shadow: 0 0 10px rgb(228, 61, 39);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+/* Price details*/
+.details{
+    width:40%;
+    height: 100%;
+    margin:40px;
+    background-color: rgb(184, 205, 243);
+    box-shadow: 0 0 10px rgb(135, 169, 224);
+
+}
+.details p{
+    font-size: small;
+    margin-left:250px;
+}
+.details-row{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+
+}
+.details-column{
+    width:50%;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.details-row2{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+
+}
+.details-column2{
+    width:50%;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* user profile*/
+.user-wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.user-wrapper img{
+    border-radius: 50px;
+    margin-right: .5rem;
+
+}
+.user-wrapper small{
+    display: inline-block;
+    color: #808080;
+}
+.dropbtn{
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown button{
+    background: transparent;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #001133;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover{
+    background-color: rgba(230, 242, 255, 0.5);
+}
+.show{
+    display: block;
+}
+/* user profile*/
+
+/* breadcrumb*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+  
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/* breadcrumb*/

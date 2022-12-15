@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-menu a, .header-cart .dropbtn, .header-login a
+{   flex: 1;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    padding: 8px 10px;
+    color: rgb(255, 255, 255);
+    
+}
+.header-menu a::after,.header-cart .dropbtn::after, .header-login a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.header-menu a:hover::after, .header-cart .dropbtn:hover::after, .header-login a:hover::after {
+    width: 100%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: #7e7e7e0e;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content{
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(216, 132, 53);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#cart-count{
+    margin-left: 5px;
+    text-align: center;
+    padding: 0 10px ;
+    border-radius: 5px;
+    background-color: rgb(156, 152, 146);
+}
