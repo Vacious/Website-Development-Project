@@ -1,12 +1,15 @@
 # Website-Development-Project
 
+<u>Steps to install code</u>
 1. Install the code in your \xampp\htdoc
 2. Turn on Apache and MySQL in XAMPP
 3. In this project folder, find database\dbyale.sql 
 4. Import dbyale.sql in your localhost phpmyadmin
 6. Run http://localhost/website-development-project/ in your browser
 
-*Additional library needed*
+<br>
+
+<b>Additional library needed</b>
 1. Require FPDF library to print invoice in PDF file type
 2. Download here http://www.fpdf.org/ , locate the folder in your project
 
