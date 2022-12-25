@@ -12,7 +12,7 @@
 
 <b>Additional library needed</b>
 1. Require FPDF library to print invoice in PDF file type
-2. Download here http://www.fpdf.org/ , locate the folder in your project
+2. Download <a href="http://www.fpdf.org/">here</a>, locate the folder in your project
 
 
 ![Yale1](https://user-images.githubusercontent.com/93658180/207926864-fc093e93-0b6a-4b8a-8b21-8b2f9e0c6104.jpg)
